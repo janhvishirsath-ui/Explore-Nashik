@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Nashik - Split Registration</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
+    .left {
+      flex: 1;
+      background: url('register.jpeg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    .right {
+      flex: 1;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+    .registration-form {
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+      animation: slideUp 1s ease forwards;
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .registration-form h2 {
+      margin-bottom: 25px;
+      color: #333;
+    }
+    .registration-form input {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      background: #f9f9f9;
+      font-size: 15px;
+    }
+    .registration-form input:focus {
+      outline: none;
+      border-color: #4CAF50;
+      background: #fff;
+    }
+    .registration-form a {
+      display: block;
+      margin: 10px 0;
+      font-size: 14px;
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    .registration-form a:hover {
+      text-decoration: underline;
+    }
+    .registration-form button {
+      width: 100%;
+      padding: 14px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+    .registration-form button:hover {
+      background: #81C784;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 15px rgba(76, 175, 80, 0.3);
+    }
+    .registration-form p {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .social-icons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .left, .right {
+        flex: none;
+        width: 100%;
+        height: 50%;
+      }
+      .left {
+        font-size: 24px;
+      }
+    }
+    /* Footer style */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #f1f1f1;
+      font-size: 14px;
+      color: #555;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <!-- Left side content can be added here -->
+  </div>
+
+  <div class="right">
+    <div class="registration-form">
+      <h2>Create Account</h2>
+      <form action="/register" method="post">
+        <input type="text" name="username" placeholder="Username" required><br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <input type="password" name="password" placeholder="Password" required><br><br>
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="/login">Login</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Explore_Nashik
+</footer>
+
+</body>
+</html>

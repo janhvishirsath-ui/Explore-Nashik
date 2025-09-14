@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Nashik - Food Court</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 30px;
+      background-color: linear-gradient(to right, #fdfcfb, #e2d1c3);
+      backdrop-filter: blur(8px);
+    }
+
+    .logo img {
+      height: 100px;
+      margin-top: 20px;
+    }
+
+    .back-button {
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 8px 16px;
+      background-color: #e8b2af;
+      color: black;
+      text-decoration: none;
+      border: 2px solid #561111;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #561111;
+      color: white;
+    }
+
+    .title-section {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .title-section h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 6rem;
+      font-weight: bold;
+      color: #561111;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .slogan {
+      font-size: 24px;
+      color: #444;
+      margin-bottom: 40px;
+    }
+
+    /* Food Block */
+    .food-block {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .food-block:hover {
+      transform: scale(1.02);
+    }
+
+    .food-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .food-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .food-details {
+      font-size: 16px;
+      color: #555;
+      margin-top: 5px;
+    }
+    @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.food-block {
+  animation: fadeInUp 0.8s ease both;
+  animation-delay: 0.3s;
+}
+.title-section h1,
+.slogan {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.title-section h1 {
+  animation-delay: 0.2s;
+}
+
+.slogan {
+  animation-delay: 0.6s;
+}
+/* Footer style */
+footer {
+      text-align: center;
+      padding: 10px;
+      background: #f1f1f1;
+      font-size: 14px;
+      color: #555;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="public/Offers/logo1.png" alt="Logo">
+    </div>
+    <a href="index.html" class="back-button">⬅ Back to Home</a>
+  </header>
+
+  <!-- Title & Slogan -->
+  <div class="title-section">
+    <h1>Food Court</h1>
+    <div class="slogan">One City, Countless Flavors</div>
+  </div>
+
+  <!-- Food Sections -->
+  <div class="container">
+
+    <div class="row food-block align-items-center" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="col-md-6">
+        <img src="public/Offers/grapes-embasy.jpg" alt="Misal Pav" class="food-image">
+      </div>
+      <div class="col-md-6">
+        <div class="food-title">Grapes Embassy</div>
+        <div class="food-details"> Near Suyojit Bridge, Road, Makhmalabad, Gangapur, Nashik, Maharashtra 422003</div>
+        <div class="food-details">Open: 8:30 AM – 3:30 PM</div>
+        <a href="https://www.google.com/maps?q=Near+Suyojit+Bridge,+Road,+Makhmalabad,+Gangapur,+Nashik,+Maharashtra+422003"
+        target="_blank"
+        class="btn btn-outline-dark mt-3">
+        View on Map
+     </a>
+      </div>
+    </div>
+
+    <div class="row food-block align-items-center" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="col-md-6">
+        <img src="public/Offers/peruWadi.jpg" alt="Misal Pav" class="food-image">
+      </div>
+      <div class="col-md-6">
+        <div class="food-title">Peruchi Vadi</div>
+        <div class="food-details"> 3P2G+M2H, Mungsare Phata Makhmalabad Girnare, highway, Nashik, Maharashtra 422003</div>
+        <div class="food-details">Open: 8:00 AM – 4:00 PM</div>
+        <a href="https://www.google.com/maps?q=3P2G+M2H,+Mungsare+Phata+Makhmalabad+Girnare,+highway,+Nashik,+Maharashtra+422003" 
+       target="_blank" 
+       class="btn btn-outline-dark mt-3">
+       View on Map
+    </a>
+      </div>
+    </div>
+
+    <div class="row food-block align-items-center">
+      <div class="col-md-6">
+        <img src="public/Offers/sadhana missal-1.jpg" alt="Vada Pav" class="food-image">
+      </div>
+      <div class="col-md-6">
+        <div class="food-title">Sadhana Misal</div>
+        <div class="food-details">Hardev Baug, Gangapur - Satpur Link Rd, near Someshwar, Bardan Phata, Nashik, Maharashtra 422222</div>
+        <div class="food-details">Open: 8:00 AM – 3:00 PM</div>
+        <a href="https://www.google.com/maps?q=Hardev+Baug,+Gangapur+-+Satpur+Link+Rd,+near+Someshwar,+Bardan+Phata,+Nashik,+Maharashtra+422222"
+        target="_blank"
+        class="btn btn-outline-dark mt-3">
+        View on Map
+     </a>
+      </div>
+    </div>
+    <div class="row food-block align-items-center">
+      <div class="col-md-6">
+        <img src="public/Offers/village-missal-4.jpg" alt="Vada Pav" class="food-image">
+      </div>
+      <div class="col-md-6">
+        <div class="food-title">The Misal Village</div>
+        <div class="food-details">2MMX+VH, Nashik, Maharashtra 422003</div>
+        <div class="food-details">Open: 8:00 AM – 3:00 PM</div>
+        <a href="https://www.google.com/maps?q=2MMX%2BVH,+Nashik,+Maharashtra+422003"
+       target="_blank"
+       class="btn btn-outline-dark mt-3">
+       View on Map
+    </a>
+      </div>
+    </div>
+    <div class="row food-block align-items-center" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-md-6">
+        <img src="public/Offers/curry-leaves-2.jpg.jpg" alt="Curry Leaves" class="food-image">
+      </div>
+      <div class="col-md-6">
+        <div class="food-title">Curry Leaves</div>
+        <div class="food-details">Jehan Circle, Gangapur Road, Nashik, Maharashtra 422005</div>
+        <div class="food-details">Open: 7:00 AM – 11:00 PM</div>
+        <a href="https://www.google.com/maps?q=Jehan+Circle,+Gangapur+Road,+Nashik,+Maharashtra+422005"
+           target="_blank"
+           class="btn btn-outline-dark mt-3">
+           View on Map
+        </a>
+      </div>
+    </div>
+    <div class="row food-block align-items-center" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-md-6">
+        <img src="public/Offers/oscarwadi-2.jpg" alt="Oscarwadi Missal" class="food-image">
+      </div>
+      <div class="col-md-6">
+        <div class="food-title">Oscarwadi Missal</div>
+        <div class="food-details">Vadali Bhoi, Nashik - 423117</div>
+        <div class="food-details">Open: 6:00 AM – 10:00 PM</div>
+        <a href="https://www.google.com/maps?q=Vadali+Bhoi,+Nashik+423117" target="_blank" class="btn btn-outline-dark mt-3">
+          View on Map
+        </a>
+      </div>
+    </div>
+    <div class="row food-block align-items-center" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-md-6">
+        <img src="public/Offers/patilwada missa-1.jpg" alt="Patil Wada" class="food-image">
+      </div>
+      <div class="col-md-6">
+        <div class="food-title">Patil Wada</div>
+        <div class="food-details">Bardan Fata Shivaji Nagar Road Near Motiwala Medical College Canal Road, Hanuman Nagar, Gangapur, Nashik, Maharashtra 422222</div>
+        <div class="food-details">Open: 8:00 AM – 3:30 PM</div>
+        <a href="https://www.google.com/maps?q=Bardan+Fata+Shivaji+Nagar+Road+Near+Motiwala+Medical+College+Canal+Road,+Hanuman+Nagar,+Gangapur,+Nashik,+Maharashtra+422222" target="_blank" class="btn btn-outline-dark mt-3">
+          View on Map
+        </a>
+      </div>
+    </div>
+    <div class="row food-block align-items-center" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-md-6">
+        <img src="public/Offers/vitthal-2.jpg" alt="Vittal Misal" class="food-image">
+      </div>
+      <div class="col-md-6">
+        <div class="food-title">Vittal Misal</div>
+        <div class="food-details">Jijau Farms, Peth Rd, Shankar Nagar, Tavli Phata, Nashik, Maharashtra 422003</div>
+        <div class="food-details">Open: 7:00 AM – 3:00 PM</div>
+        <a href="https://www.google.com/maps?q=Jijau+Farms,+Peth+Rd,+Shankar+Nagar,+Tavli+Phata,+Nashik,+Maharashtra+422003" target="_blank" class="btn btn-outline-dark mt-3">
+          View on Map
+        </a>
+      </div>
+    </div>
+    
+
+  </div>
+  <footer>
+    &copy; 2025 Explore_Nashik
+  </footer>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

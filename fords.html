@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forts of Nashik</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .fort-logo {
+      width: 120px;
+      height: 110px;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    .fort-header {
+      text-align: center;
+      margin-top: 1px;
+      margin-bottom: 30px;
+    }
+    @keyframes slideInFromLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    .fort-header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 6rem;
+      font-weight: 700;
+      color: #094b0e;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+      opacity: 0;
+      animation: slideInFromLeft 1s ease-out forwards;
+      animation-delay: 1s;
+      margin-top: 1px;
+    }
+    .fort-header p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-style: italic;
+      color: #2b1c04;
+      margin-top: 10px;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+      animation-delay: 2s;
+    }
+    .card {
+      border: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    .btn-explore {
+      background-color: #3dba4f;
+      color: white;
+      border: none;
+    }
+    .btn-explore:hover {
+      background-color: #27b761;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .card {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .card.animate {
+      animation: fadeInUp 0.8s forwards;
+    }
+    
+    /* Footer style */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #f1f1f1;
+      font-size: 14px;
+      color: #555;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <img src="public/Offers/logo1.png" alt="Logo" class="fort-logo" />
+
+
+  <div class="container fort-header">
+    <h1>Forts</h1>
+    <p>Explore the Majestic Forts of Nashik</p>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row g-4">
+
+      <!-- Fort Block 1 -->
+      
+
+      <!-- Fort Block 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Highlights/forts/anjneri/a2.jpg" class="card-img-top" alt="Ahivant Fort">
+          <div class="card-body">
+            <h5 class="card-title">Anjneri Fort</h5>
+            <p class="card-text">Anjineri Fort, located near Nashik, is a historic hill fort known for its scenic views and rich history,
+               making it a popular trekking destination.</p>
+            <a href="public/Highlights/forts/anjneri.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fort Block 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Highlights/forts/bramhagiri/bramha.jpg" class="card-img-top" alt="Salher Fort">
+          <div class="card-body">
+            <h5 class="card-title">Bramhgiri Fort</h5>
+            <p class="card-text">Bramhgiri is a prominent hill near Nashik, known for its spiritual significance and the scenic trek that leads to the ancient Trimbakeshwar temple at its summit.</p>
+            <a href="public/Highlights/forts/bramhagir.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fort Block 4 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Highlights/forts/chambharleni/chambharleni1.webp" class="card-img-top" alt="Salota Fort">
+          <div class="card-body">
+            <h5 class="card-title">Chambhar Leni Fort</h5>
+            <p class="card-text">Chambhar Leni Fort is a historic Jain pilgrimage site near Nashik, known for its ancient rock-cut caves and intricate carvings..</p>
+            <a href="public/Highlights/forts/chambharleni.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fort Block 5 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Highlights/forts/dhodap/dhodap1.jpg" class="card-img-top" alt="Harihar Fort">
+          <div class="card-body">
+            <h5 class="card-title">Dhodap Fort</h5>
+            <p class="card-text">Dhodap Fort, located in the Nashik district, is a historic hill fort offering panoramic views and a serene escape into nature.</p>
+            <a href="public/Highlights/forts/dhodap.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fort Block 6 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Highlights/forts/harihar/harihar1.jpg" class="card-img-top" alt="Mulangad Fort">
+          <div class="card-body">
+            <h5 class="card-title">Harihar Fort</h5>
+            <p class="card-text">Harihara Fort, nestled in the Sahyadri mountains, is a historically significant fort known for its majestic architecture and stunning views.</p>
+            <a href="public/Highlights/forts/harihar.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fort Block 7 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Highlights/forts/pandvleni/pl1.jpg" class="card-img-top" alt="Kulang Fort">
+          <div class="card-body">
+            <h5 class="card-title">Pandav Leni Fort</h5>
+            <p class="card-text">Pandav Leni Fort, located near Nashik, is an ancient rock-cut Buddhist cave complex with stunning architectural and historical significance.</p>
+            <a href="public/Highlights/forts/pandvleni.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fort Block 8 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Highlights/forts/ramshej/r1.jpg" class="card-img-top" alt="Alang Fort">
+          <div class="card-body">
+            <h5 class="card-title">Ramshej Fort</h5>
+            <p class="card-text">Pandav Leni Fort, located near Nashik, is an ancient rock-cut Buddhist cave complex with stunning architectural and historical significance.</p>
+            <a href="public/Highlights/forts/ramshej.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Highlights/forts/vajragad/vg.jpg" class="card-img-top" alt="Alang Fort">
+          <div class="card-body">
+            <h5 class="card-title">Vajragad Fort</h5>
+            <p class="card-text">Vajragad Fort, located in the Sahyadri hills near Nashik, is a lesser-known fort offering scenic views and a glimpse into Maharashtra's rich history.</p>
+            <a href="public/Highlights/forts/vajragad.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Fort Block 9 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Highlights/forts/salher/salher.jpg" class="card-img-top" alt="Ratangad Fort">
+          <div class="card-body">
+            <h5 class="card-title">Salher Fort</h5>
+            <p class="card-text">Salher Fort, one of the highest forts in Maharashtra, is known for its rugged terrain and strategic importance during the Maratha period.</p>
+            <a href="public/Highlights/forts/salher.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Explore_Nashik
+  </footer>
+  
+  <script>
+    // Animation on scroll
+    const cards = document.querySelectorAll('.card');
+    window.addEventListener('scroll', () => {
+      cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          card.classList.add('animate');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

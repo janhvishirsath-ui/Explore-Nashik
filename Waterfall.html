@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Waterfalls - Explore Nashik</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1572683836357-21c433b5005c?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg5MXwwfDF8c2VhY3x8fHwxfHx3YXRlcnxlbnwwfHx8fDE2ODkzODk0ODI&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+      backdrop-filter: blur(10px);
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 110px;
+    }
+
+    .title {
+      text-align: center;
+      flex-grow: 1;
+      font-family: 'Cinzel', serif;
+      font-size: 6rem;
+      font-weight: bold;
+      animation: slideIn 2s ease-in-out;
+      color: #031a2e;  /* A water-like teal color */
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      margin-right: 100px;
+      margin-top: 10px;
+      margin-left: 80px;
+    }
+
+    .slogan {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 44px;
+      color: rgb(100, 141, 158); /* Light blue to represent water */
+      font-family: 'Cormorant Garamond', serif;
+      animation: glow 2s ease-in-out infinite alternate;
+      text-shadow: 1px 1px 3px #000;
+      margin-left: 30px;
+      margin-right: 70px;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #56a3a6, 0 0 20px #56a3a6;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #00f;
+      }
+    }
+
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateY(-40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .food-section {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 60px 0;
+      align-items: center;
+      justify-content: space-around;
+      padding: 20px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+
+    .food-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .food-section.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .food-img {
+      flex: 1 1 40%;
+      max-width: 500px;
+      padding: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+    }
+
+    .food-img img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.5s ease;
+    }
+
+    .food-img img:hover {
+      transform: scale(1.05);
+    }
+
+    .food-info {
+      flex: 1 1 50%;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .food-info h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      margin-bottom: 15px;
+      color: #004f54;  /* Deep teal color for contrast */
+    }
+
+    .food-info p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .see-more-btn {
+      background-color: #56a3a6; /* Teal color for buttons */
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .see-more-btn:hover {
+      background-color: #2a8f8b; /* Slightly darker shade for hover effect */
+    }
+
+    @media (max-width: 768px) {
+      .food-section {
+        flex-direction: column;
+      }
+
+      .food-img {
+        flex: 1 1 100%;
+      }
+
+      .food-info {
+        flex: 1 1 100%;
+        padding: 20px;
+      }
+    }
+    /* Footer style */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #f1f1f1;
+      font-size: 14px;
+      color: #555;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="public/Offers/logo1.png" alt="Logo" />
+    </div>
+    <a href="index.html" class="btn btn-outline-dark" style="background-color: #56a3a6; font-weight: bold; border-radius: 10px; padding: 10px 20px;">
+      ⬅ Back to Home
+    </a>
+  </header>
+  
+  <div class="title">Waterfalls</div>
+  <div class="logo-placeholder"></div>
+  <div class="slogan">Nature’s Finest Cascade</div>
+
+  <!-- Waterfall Section 1 -->
+  <div class="food-section">
+    <div class="food-img">
+      <img src="public/Offers/bhavli-waterfall.avif" alt="Peruchi Vadi">
+    </div>
+    <div class="food-info">
+      <h2>Bhavli Waterfall</h2>
+      <p>Bhavli Waterfall, nestled in the scenic hills, is a serene and tranquil spot offering a peaceful retreat surrounded by lush greenery.
+         It's perfect for nature lovers seeking relaxation and an escape into the beauty of the outdoors.</p>
+      <a href="public/Highlights/waterfall/bhavali.html" class="see-more-btn">See More</a>
+    </div>
+  </div>
+
+  <!-- Waterfall Section 2 -->
+  <div class="food-section">
+    <div class="food-img">
+      <img src="public/Offers/dugarwadi.jpg" alt="Misal Pav">
+    </div>
+    <div class="food-info">
+      <h2>Durgwadi Waterfall</h2>
+      <p> A hidden gem near Sapgon, known for its tranquil surroundings and crystal-clear cascading waters, perfect for a serene getaway.</p>
+      <a href="public/Highlights/waterfall/dugarwadi.html" class="see-more-btn">See More</a>
+    </div>
+  </div>
+
+  <div class="food-section">
+    <div class="food-img">
+      <img src="public/Offers/ashoka.jpg" alt="Misal Pav">
+    </div>
+    <div class="food-info">
+      <h2>Ashoka Waterfall</h2>
+      <p> Ashoka Waterfall, also known as Vihigaon Waterfall, is a 120-foot monsoon-fed cascade nestled near Vihigaon village in Maharashtra.
+         Famed for its lush surroundings and as a filming location for the movie Asoka, it's a popular spot for rappelling and nature treks. </p>
+      <a href="public/Highlights/waterfall/ashoka.html" class="see-more-btn">See More</a>
+    </div>
+  </div>
+
+  <div class="food-section">
+    <div class="food-img">
+      <img src="public/Offers/pahine.jpg" alt="Misal Pav">
+    </div>
+    <div class="food-info">
+      <h2>Pahine Waterfall</h2>
+      <p> Pahine Waterfall, nestled near Trimbakeshwar in Nashik district, 
+        offers a tranquil escape amidst the Sahyadri ranges, making it a perfect spot for nature lovers and trekkers. </p>
+      <a href="public/Highlights/waterfall/pahine.html" class="see-more-btn">See More</a>
+    </div>
+  </div>
+
+  
+  <div class="food-section">
+    <div class="food-img">
+      <img src="public/Offers/Dobhosa_watwrfall.jpg" alt="Misal Pav">
+    </div>
+    <div class="food-info">
+      <h2>Dabhosa Waterfall</h2>
+      <p> Dabhosa Waterfall, located in the serene hills of Palghar, offers a peaceful retreat surrounded by lush greenery,
+         making it an ideal destination for nature enthusiasts and adventure seekers</p>
+      <a href="public/Highlights/waterfall/dabhosa.html" class="see-more-btn">See More</a>
+    </div>
+  </div>
+
+  <div class="food-section">
+    <div class="food-img">
+      <img src="public/Offers/someshwarfall.jpg" alt="Misal Pav">
+    </div>
+    <div class="food-info">
+      <h2>  Someshwar Waterfall</h2>
+      <p> Someshwar Waterfall, located near Someshwar Temple in Nashik, Maharashtra, is a serene 10-meter cascade formed over the sacred River Godavari. 
+        During the monsoon season, it transforms into a picturesque spot surrounded by lush greenery,
+         making it a popular destination for nature enthusiasts and families seeking a peaceful retreat. ​</p>
+      <a href="public/Highlights/waterfall/someshwar.html" class="see-more-btn">See More</a>
+    </div>
+  </div>
+  <div class="food-section">
+    <div class="food-img">
+      <img src="public/Offers/Kalmandavi_Waterfall.jpeg" alt="Misal Pav">
+    </div>
+    <div class="food-info">
+      <h2> kalmandavi waterfall</h2>
+      <p> Kalmandavi Waterfall, hidden in the lush greenery near Nashik, offers a peaceful escape with its scenic beauty and refreshing surroundings, perfect for a serene getaway.
+
+        ​</p>
+      <a href="public/Highlights/waterfall/kalmandavi.html" class="see-more-btn">See More</a>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Explore_Nashik
+  </footer>
+  <script>
+    const sections = document.querySelectorAll('.food-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+  
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

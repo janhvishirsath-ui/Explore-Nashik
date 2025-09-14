@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply as a Local Guide</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    h1, h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    /* Header */
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    /* Main Content */
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .apply-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .apply-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .apply-form input,
+    .apply-form textarea {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+
+    .apply-form textarea {
+      resize: vertical;
+    }
+
+    .apply-form input:focus,
+    .apply-form textarea:focus {
+      border-color: #333;
+      outline: none;
+    }
+
+    .apply-form button {
+      padding: 15px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    .apply-form button:hover {
+      background-color: #444;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Explore Nashik - Become a Local Guide</h1>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="apply-section">
+      <h2>Apply to Be a Local Guide</h2>
+      <p>If you're passionate about Nashik and would like to share your knowledge with others, become a local guide! Fill out the form below to apply.</p>
+      
+      <!-- Application Form -->
+      <form class="apply-form">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="text" id="location" placeholder="Location (City/Area)" required>
+        <textarea id="experience" placeholder="Tell us about your experience with Nashik" rows="5" required></textarea>
+        <textarea id="why" placeholder="Why do you want to become a guide?" rows="5" required></textarea>
+        
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Explore Nashik. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Nashik</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts for Headings and Slogan -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .temple-logo {
+  width: 120px;   
+  height: 110px;
+  margin-left: 50px;  
+  margin-top: 20px;
+}
+    .temple-header {
+      text-align: center;
+      margin-top: 1px;
+      margin-bottom: 30px;
+    }
+    @keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+    .temple-header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 6rem;
+      font-weight: 700;
+      color: #6c432d;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+      opacity: 0;
+  animation: slideInFromLeft 1s ease-out forwards;
+  animation-delay: 1s;
+  margin-top: 1px;
+    }
+    .temple-header p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      font-style: italic;
+      color: #2b1c04;
+      margin-top: 10px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      .temple-header p {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2s;
+}
+    }
+    .card {
+      border: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    .btn-explore {
+      background-color: #845c43;
+      color: white;
+      border: none;
+    }
+    .btn-explore:hover {
+      background-color: #5a3e2b;
+    }
+
+    /* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Logo fade-in */
+.logo-sidebar img {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+/* Title animation */
+.temple-header {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+/* Slogan animation */
+.temple-header p {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2s;
+}
+
+/* Cards initial state and animation class */
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.card.animate {
+  animation: fadeInUp 0.8s forwards;
+}
+
+
+    
+    /* Footer style */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #f1f1f1;
+      font-size: 14px;
+      color: #555;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <img src="public/Offers/logo1.png" alt="Logo" class="temple-logo" />
+   
+  <div class="container temple-header">
+    <h1>Temples</h1>
+    <p>Discover the Divine Heritage of Nashik</p>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row g-4">
+      <!-- Temple Block 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/trambak (1).jpg" class="card-img-top" alt="Trimbakeshwar Temple">
+          <div class="card-body">
+            <h5 class="card-title">Trimbakeshwar Temple</h5>
+            <p class="card-text">One of the 12 Jyotirlingas, located at the source of the Godavari River.</p>
+            <a href="public/Destinations/trambak.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temple Block 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/Kaaleram Temple, Nashik.jpeg" class="card-img-top" alt="Kalaram Temple">
+          <div class="card-body">
+            <h5 class="card-title">Kalaram Temple</h5>
+            <p class="card-text">Historic black stone temple dedicated to Lord Rama in Panchavati.</p>
+            <a href="public/Destinations/kalaram.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temple Block 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/ganga_ghat (1).jpg" class="card-img-top" alt="Ganga Ghat">
+          <div class="card-body">
+            <h5 class="card-title">Ganga Ghat</h5>
+            <p class="card-text">A revered site along the Godavari River with a serene and spiritual ambience.</p>
+            <a href="public/Destinations/gangaghat.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temple Block 4 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/iskcon.jpg" class="card-img-top" alt="Iskcon">
+          <div class="card-body">
+            <h5 class="card-title">Iskcon</h5>
+            <p class="card-text">A serene temple dedicated to Lord Krishna, known for its devotional gatherings.</p>
+            <a href="public/Destinations/iskon.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temple Block 5 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/navsha_ganpti.jpeg" class="card-img-top" alt="Navsha Ganpati Temple">
+          <div class="card-body">
+            <h5 class="card-title">Navsha Ganpati Temple</h5>
+            <p class="card-text">A peaceful, ancient temple known for fulfilling wishes with its serene atmosphere.</p>
+            <a href="public/Destinations/navashya_ganapati.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temple Block 6 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/Saptashrungi Temple.jpeg" class="card-img-top" alt="Saptashrungi Devi">
+          <div class="card-body">
+            <h5 class="card-title">Saptashrungi Devi</h5>
+            <p class="card-text">Located on a mountain, this temple is one of the 51 Shakti Peethas.</p>
+            <a href="public/Destinations/saptshrungi.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temple Block 7 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/someshwar.jpeg" class="card-img-top" alt="Someshwar Temple">
+          <div class="card-body">
+            <h5 class="card-title">Someshwar Temple</h5>
+            <p class="card-text">A serene riverside temple offering peace, devotion, and scenic beauty.</p>
+            <a href="public/Destinations/someshwar.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temple Block 8 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/kapaleshwar.jpg" class="card-img-top" alt="Kapaleshwar Temple">
+          <div class="card-body">
+            <h5 class="card-title">Kapaleshwar Temple</h5>
+            <p class="card-text">The oldest Shiva temple in Nashik, known for its unique architectural charm.</p>
+            <a href="public/Destinations/kapaleshwar.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temple Block 9 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/Anjaneri.jpeg" class="card-img-top" alt="Anjneri Temple">
+          <div class="card-body">
+            <h5 class="card-title">Anjneri Temple</h5>
+            <p class="card-text">Believed to be the birthplace of Lord Hanuman, set amidst the Anjneri hills.</p>
+            <a href="public/Destinations/anjeneri.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Temple Block Example -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/chandwad_devi.jpg" class="card-img-top" alt="Chandwad Devi">
+          <div class="card-body">
+            <h5 class="card-title">Chandwad Devi</h5>
+            <p class="card-text">A temple exuding mystical energy, attracting devotees with its ancient charm.</p>
+            <a href="public/Offers/Temples/Renukamata.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Balaji Temple Block -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/balaji.jpg" class="card-img-top" alt="Balaji Temple">
+          <div class="card-body">
+            <h5 class="card-title">Balaji Temple</h5>
+            <p class="card-text">A peaceful hilltop temple offering serene views and divine ambiance.</p>
+            <a href="#" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mini Kedarnath Block -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/mini_kedarnath.jpg" class="card-img-top" alt="Mini Kedarnath">
+          <div class="card-body">
+            <h5 class="card-title">Mini Kedarnath</h5>
+            <p class="card-text">A spiritual replica of Kedarnath, offering tranquil vibes amidst scenic beauty.</p>
+            <a href="public/Offers/Temples/miniked.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sita Gufa Block -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/sita_gufa.jpg" class="card-img-top" alt="Sita Gufa">
+          <div class="card-body">
+            <h5 class="card-title">Sita Gufa</h5>
+            <p class="card-text">A revered cave shrine radiating mystical tranquility and divine reverence.</p>
+            <a href="public/Offers/Temples/Sitagufa.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swaminarayan Temple Block -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/swaminarayan.jpg" class="card-img-top" alt="Swaminarayan Temple">
+          <div class="card-body">
+            <h5 class="card-title">Swaminarayan Temple</h5>
+            <p class="card-text">A vibrant temple exuding devotion and offering a peaceful haven for reflection.</p>
+            <a href="public/Destinations/swaminarayan.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gondeshwar Temple Block -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/godeshwar.jpg" class="card-img-top" alt="Gondeshwar Temple">
+          <div class="card-body">
+            <h5 class="card-title">Gondeshwar Temple</h5>
+            <p class="card-text">A serene sacred site celebrated for its ancient architecture and peaceful spiritual ambiance.</p>
+            <a href="public/Offers/Temples/gondeshwar.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shree Swami Samarth Gurupeeth Block -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/Swami_Samarth.png" class="card-img-top" alt="Shree Swami Samarth Gurupeeth">
+          <div class="card-body">
+            <h5 class="card-title">Shree Swami Samarth Gurupeeth</h5>
+            <p class="card-text">A revered spiritual sanctuary that inspires deep devotion and inner awakening.</p>
+            <a href="public/Offers/Temples/swamisamarth.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jain Mandir Block -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/jain-mandir-nashik.jpg" class="card-img-top" alt="Jain Mandir Nashik">
+          <div class="card-body">
+            <h5 class="card-title">Jain Mandir Nashik</h5>
+            <p class="card-text">A peaceful sanctuary celebrated for its intricate craftsmanship and timeless Jain philosophy.</p>
+            <a href="public/Offers/Temples/jain.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Naroshankar Temple Block -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/Offers/Naroshankar.webp" class="card-img-top" alt="Naroshankar Temple">
+          <div class="card-body">
+            <h5 class="card-title">Naroshankar Temple</h5>
+            <p class="card-text">A serene sanctuary renowned for its spiritual aura and captivating architecture.</p>
+            <a href="public/Offers/Temples/Naroshankar.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Explore_Nashik
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Animate temple title and slogan
+      document.querySelector(".temple-header").style.animation = "fadeIn 1s forwards";
+      document.querySelector(".temple-header p").style.animation = "fadeIn 1s forwards";
+      document.querySelector(".temple-header p").style.animationDelay = "2s";
+  
+      // Animate cards one by one
+      const cards = document.querySelectorAll(".card");
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add("animate");
+        }, 2500 + index * 300); // start after slogan (2.5s) and stagger each by 0.3s
+      });
+    });
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

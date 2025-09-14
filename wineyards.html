@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Nashik - Wineyards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Global Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* HTML and Body */
+    html {
+      font-size: 10px;
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: sans-serif;
+      color: #000;
+      background: linear-gradient(to right, #fdfcfb, #ddc9b8);
+      font-size: 1.3rem;
+      line-height: 1.54;
+      min-width: 320px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Banner Section */
+    .banner-section-container {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      height: 200px;
+    }
+
+    .banner-section-container:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 30%, transparent);
+    }
+
+    /* Responsive for larger screens */
+    @media (min-width: 768px) {
+      body {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .banner-section-container {
+        height: 320px;
+      }
+    }
+
+    /* Wineyard Section */
+    .wineyard-container {
+      padding: 50px 0;
+    }
+
+    .wineyard-heading {
+      text-align: center;
+      font-size: 6rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      flex-grow: 1;
+      font-family: 'Cinzel', serif;
+      font-size: 6rem;
+      font-weight: bold;
+      animation: slideIn 2s ease-in-out;
+      color: #2f0505;
+    }
+
+    .wineyard-slogan {
+      text-align: center;
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .wineyard-card {
+      transition: transform 0.3s ease;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .wineyard-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .wineyard-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .wineyard-card-body {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .btn-explore {
+  background-color: #8B0000; /* dark red wine color */
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-explore:hover {
+  background-color: #ce6b6b; /* even darker when hover */
+  color: #fff;
+}
+/* Footer style */
+footer {
+      text-align: center;
+      padding: 10px;
+      background: #f1f1f1;
+      font-size: 14px;
+      color: #555;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="banner-section-container" style="background-image: url('public/Offers/bg.webp');">
+  </div>
+
+  <div class="container wineyard-container">
+    <h1 class="wineyard-heading">Wineyards</h1>
+    <p class="wineyard-slogan">Nashik – The Wine Capital of India</p>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card wineyard-card">
+          <img src="public/Offers/sula1.avif" class="card-img-top" alt="Sula Vineyards">
+          <div class="card-body">
+            <h5 class="card-title">Sula Vineyards</h5>
+            <p class="card-text">One of the most popular vineyards in Nashik, offering stunning views and delicious wines.</p>
+            <a href="public/Highlights/wine yard/sula.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card wineyard-card">
+          <img src="public/Offers/vallonee1.avif" class="card-img-top" alt="Vallonne Vineyards">
+          <div class="card-body">
+            <h5 class="card-title">Vallonne Vineyards</h5>
+            <p class="card-text">A beautiful vineyard offering wine-tasting sessions and a serene ambiance.</p>
+            <a href="public/Highlights/wine yard/vallonne.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card wineyard-card">
+          <img src="public/Offers/york1.avif" class="card-img-top" alt="Hidden Vineyards">
+          <div class="card-body">
+            <h5 class="card-title">York Winery</h5>
+            <p class="card-text">York Winery is known for its scenic views and award-winning wines.</p>
+            <a href="public/Highlights/wine yard/york.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card wineyard-card">
+          <img src="public/Offers/chandon1.avif" class="card-img-top" alt="Vallonne Vineyards">
+          <div class="card-body">
+            <h5 class="card-title">Chandon India Winery</h5>
+            <p class="card-text">​Chandon India Winery, located in Dindori, Nashik, is a premier destination for sparkling wine enthusiasts.</p>
+            <a href="public/Highlights/wine yard/chandon.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card wineyard-card">
+          <img src="public/Offers/tiger1.avif" class="card-img-top" alt="Vallonne Vineyards">
+          <div class="card-body">
+            <h5 class="card-title">Tiger Hill Vineyards</h5>
+            <p class="card-text">The Tiger Hill series comprises six distinct wines, each offering a unique tasting experience. </p>
+            <a href="public/Highlights/wine yard/tiger.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card wineyard-card">
+          <img src="public/Offers/berry1.avif" class="card-img-top" alt="Vallonne Vineyards">
+          <div class="card-body">
+            <h5 class="card-title">Grape Berry Vineyards</h5>
+            <p class="card-text">Grape Berry Vineyards is an organic winery nestled in Shilapur, Nashik, Maharashtra. </p>
+            <a href="public/Highlights/wine yard/grape.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card wineyard-card">
+          <img src="public/Offers/grover1.avif" class="card-img-top" alt="Vallonne Vineyards">
+          <div class="card-body">
+            <h5 class="card-title">Grover Zampa Vineyards</h5>
+            <p class="card-text">Grover Zampa Vineyards is a renowned Indian winery located in Nashik, Maharashtra. Established in 1988. </p>
+            <a href="public/Highlights/wine yard/grover.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="card wineyard-card">
+          <img src="public/Offers/soma1.jpg" class="card-img-top" alt="Vallonne Vineyards">
+          <div class="card-body">
+            <h5 class="card-title">Soma Vine Village</h5>
+            <p class="card-text">Soma Vine Village offers a unique blend of wine tourism and hospitality. </p>
+            <a href="public/Highlights/wine yard/soma.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Explore_Nashik
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
